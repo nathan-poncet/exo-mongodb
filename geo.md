@@ -22,7 +22,7 @@ db.salles.find({
    "adresse.localisation": {
       $geoWithin: {
          $centerSphere: [
-            [salle.adresse.position.coordinates[0], salle.adresse.position.coordinates[1]],
+            [salle.adresse.localisation.coordinates[0], salle.adresse.localisation.coordinates[1]],
             KilometresEnRadians(60)
          ]
       }
@@ -62,8 +62,6 @@ db.salles.find({
    "adresse.ville": 1
 });
 ```
-
-db.salles.find( {"adresse.localisation": { $nearSphere: { $geometry: { "type": "Point", "coordinates": [43.300000, 5.400000] } , $maxDistance: 100000 } } }, { "_id": 0,"adresse.ville": 1 });
 
 Exercice 3:
 
