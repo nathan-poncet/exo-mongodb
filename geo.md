@@ -10,12 +10,6 @@ var KilometresEnRadians = function(kilometres){
 
 var salle = db.salles.findOne({"adresse.ville": "Nîmes"});
 
-var requete = { ... };
-
-db.salles.find(requete ... };
-```
-
-```
 // Requête
 db.salles.find({
    "styles": { $in: ["Blues", "Soul"] },
@@ -41,10 +35,6 @@ Exercice 2:
 ```
 var marseille = {"type": "Point", "coordinates": [43.300000, 5.400000]}
 
-db.salles.find(...)
-```
-
-```
 // Création de l'index
 db.salles.createIndex( { "adresse.localisation" : "2dsphere" } );
 
