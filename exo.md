@@ -79,7 +79,7 @@ Exercice 2
 Affichez le nom des salles qui possèdent une capacité d’accueil strictement supérieure à 1000 places.
 
 ```
-db.salles.find({capacite: {$gt: 1000}}, { _id: 0, nom: 1 })
+db.salles.find({ capacite: { $gt: 1000 } }, { _id: 0, nom: 1 })
 ```
 
 Exercice 3
