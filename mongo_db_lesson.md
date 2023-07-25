@@ -1,5 +1,7 @@
 # Mongo
 
+ceci est une synthèse pour résumer les principales connaissances apprises lors des exercices réaliser sur ce repo :
+
 ## Base de données NoSQL :
 MongoDB est une base de données orientée document, qui stocke les données sous une forme semi-structurée (BSON). Par exemple, au lieu de stocker les informations d'un utilisateur dans une table (comme SQL), MongoDB stockerait les informations de l'utilisateur dans un document BSON ressemblant à du JSON.
 
